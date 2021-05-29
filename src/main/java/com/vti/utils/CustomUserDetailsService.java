@@ -28,8 +28,8 @@ import com.vti.service.AdminService;
  * This class JwtRequestFilter.
  * 
  * @Description: .
- * @author: Đinh Huy Khánh
- * @create_date: 3/5/2021
+ * @author: Nguyễn Thị Chinh
+ * @create_date: 14/5/2021
  * @version: 1.0
  * @modifer: 
  * @modifer_date: 
@@ -56,8 +56,8 @@ public class CustomUserDetailsService implements UserDetailsService {
 	 * This method is loadUserByUsername.
 	 * 
 	 * @Description: .
-	 * @author: Đinh Huy Khánh
-	 * @create_date: 3/5/2021
+	 * @author: Nguyễn Thị Chinh
+	 * @create_date: 15/5/2021
 	 * @version: 1.0
 	 * @modifer: 
 	 * @modifer_date: 

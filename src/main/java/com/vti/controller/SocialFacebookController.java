@@ -40,8 +40,7 @@ import com.vti.utils.TokenDTO;
 @RestController
 @CrossOrigin("*")
 public class SocialFacebookController {
-//	private FacebookConnectionFactory factory = new FacebookConnectionFactory("369670134345835", "570606df435a940368c786d59a2dae4f");
-//	private User userProfile;
+
 	
 	@Autowired
 	private PasswordEncoder passwrodEncoder;
@@ -64,64 +63,8 @@ public class SocialFacebookController {
 	@Autowired 
 	IUserService userService;
 	
-	/**
-	 * This method is login Facebook.
-	 * 
-	 * @Description: .
-	 * @author: Đinh Huy Khánh
-	 * @create_date: 3/5/2021
-	 * @version: 1
-	 * @modifer: 
-	 * @modifer_date: 
-	 * @return : result
-	 */	
-	@PostMapping(value ="/auth/facebook")
-	public ResponseJwt loginFacebook(@RequestBody TokenDTO token) {
-		ResponseJwt result = new ResponseJwt();
-		Facebook facebook = new FacebookTemplate(token.getToken());
-		String[] fields = {"id","email","name","address"};// tên cột cần lấy
-		User user = facebook.fetchObject("me", User.class,fields);
-		if(userRepository.existsById(user.getId())) {
-			com.vti.entity.User entity = new com.vti.entity.User();
-			entity.setId(user.getId());
-			entity.setEmail(user.getEmail());
-//			entity.setAddress(user.getAddress().getCountry());
-			entity.setName(user.getName());
-			userRepository.save(entity);
-		}
-		com.vti.entity.User entity = userRepository.findById(user.getId());
-		if(Objects.nonNull(entity)) {
-			Map<String, Object> map = new HashMap<>();
-			String jwt = generateTokenFace(entity.getId());
-			map.put("jwt", jwt);
-			map.put("data", entity);
-			result.setData(map);
-			result.setMessage("Success");
-		}else {
-			result.setMessage("Fail");
-		}
-		return result;
-	}
 
-	
 
-//	/**
-//	 * This method is get User Login Facebook.
-//	 * 
-//	 * @Description: .
-//	 * @author: Đinh Huy Khánh
-//	 * @create_date: 6/5/2021
-//	 * @version: 1.0
-//	 * @modifer: 
-//	 * @modifer_date: 
-//	 * @return : userProfile
-//	 */
-//	@GetMapping(value="/login/user")
-//	public User getUserLoginFacebook() {
-//		
-//		return userProfile;
-//	}
-	
 	
 	
 	private String generateTokenFace(String id) {
