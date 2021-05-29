@@ -54,8 +54,8 @@ public class AdminController {
 	 * This method is loginAdmin
 	 * 
 	 * @Description: .
-	 * @author: Đinh Huy Khánh
-	 * @create_date: 3/5/2021
+	 * @author: Đặng văn Hải
+	 * @create_date: 10/5/2021
 	 * @version: 1.0
 	 * @modifer: 
 	 * @modifer_date: 

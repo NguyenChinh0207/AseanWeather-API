@@ -23,8 +23,8 @@ import java.io.IOException;
  * This class JwtRequestFilter.
  * 
  * @Description: .
- * @author: Đinh Huy Khánh
- * @create_date: 3/5/2021
+ * @author: Nguyễn Thị Chinh
+ * @create_date: 13/5/2021
  * @version: 1.0
  * @modifer: 
  * @modifer_date: 
@@ -47,8 +47,8 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 	 * This method is doFilterInternal.
 	 * 
 	 * @Description: .
-	 * @author: Đinh Huy Khánh
-	 * @create_date: 3/5/2021
+	 * @author: Nguyễn Thị Chinh
+	 * @create_date: 13/5/2021
 	 * @version: 1.0
 	 * @modifer: 
 	 * @modifer_date: 
