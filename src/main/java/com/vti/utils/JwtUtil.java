@@ -24,7 +24,7 @@ import io.jsonwebtoken.UnsupportedJwtException;
  * This class JwtUtil.
  * 
  * @Description: .
- * @author: Đặng Văn Hải
+ * @author: Nguyễn Thị Chinh
  * @create_date: 13/5/2021
  * @version: 1.0
  * @modifer: 

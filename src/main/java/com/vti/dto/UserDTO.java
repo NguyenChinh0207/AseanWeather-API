@@ -6,8 +6,8 @@ import com.vti.entity.User;
  * This class is User DTO.
  * 
  * @Description: .
- * @author: Đinh Huy Khánh
- * @create_date: 3/5/2021
+ * @author: Nguyễn Thị Chinh
+ * @create_date: 13/5/2021
  * @version: 1.0
  * @modifer: 
  * @modifer_date: 

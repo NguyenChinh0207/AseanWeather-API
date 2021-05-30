@@ -16,8 +16,8 @@ public class AdminService implements IAdminService{
 	 * This method is exists By Email And Password.
 	 * 
 	 * @Description: .
-	 * @author: Đinh Huy Khánh
-	 * @create_date: 3/5/2021
+	 * @author: Đặng Văn Hải
+	 * @create_date: 16/5/2021
 	 * @version: 1.0
 	 * @modifer: 
 	 * @modifer_date: 
