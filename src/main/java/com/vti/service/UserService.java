@@ -22,8 +22,8 @@ public class UserService implements IUserService {
 	 * This method is exists User By ID.
 	 * 
 	 * @Description: .
-	 * @author: Đinh Huy Khánh
-	 * @create_date: 3/5/2021
+	 * @author: Nguyễn Thị Chinh
+	 * @create_date: 13/5/2021
 	 * @version: 1.0
 	 * @modifer: 
 	 * @modifer_date: 
@@ -39,7 +39,7 @@ public class UserService implements IUserService {
 	 * This method create User.
 	 * 
 	 * @Description: .
-	 * @author: Đinh Huy Khánh
+	 * @author:Nguyễn Thị Chinh
 	 * @create_date: 3/5/2021
 	 * @version: 1.0
 	 * @modifer: 
