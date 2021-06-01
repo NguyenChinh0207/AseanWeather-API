@@ -61,7 +61,7 @@ public class AdminController {
 	 * @modifer_date: 
 	 * return : result (json) 
 	 */
-	
+	//ht 31/5/2021
 	@PostMapping(value="/login")
 	public ResponseJwt loginAdmin(@RequestBody @Valid  Admin admin){
 		ResponseJwt result = new ResponseJwt();
